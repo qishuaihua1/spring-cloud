@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 public class FeignFallBackHello implements HelloServerImpl {
     @Override
     public String helloServerFeign() {
-        return "sorry this is an error";
+        return "sorry this is an error!!!";
     }
 }
