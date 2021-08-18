@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server-01:8888/eureka/,http://eureka-server-02:8088/eureka/,http://eureka-server-03:8008/eureka/
+server:
+  port: 8756
+
+spring:
+  application:
+    name: feign-server
+
+feign:
+  circuitbreaker:
+    enabled: true
